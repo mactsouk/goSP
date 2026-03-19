@@ -1,4 +1,4 @@
-# Go Systems Programming 2nd edition
+# Practical Systems Programming in Go
 
 - ch01: Go basics
 - ch02: Important Go features and packages

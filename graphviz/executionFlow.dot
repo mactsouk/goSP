@@ -1,0 +1,45 @@
+digraph GoProgramExecution {
+    rankdir=TB;
+    node [shape=box, style=rounded, fontsize=16];
+
+    // High-level phases
+    source_code  [label="Go Source Code\n(.go files)", shape=note, style=filled, fillcolor="#f0f8ff"];
+    go_build     [label="Compile & Link\n(go build)"];
+    binary       [label="Statically Linked Binary"];
+    os_loader    [label="OS Loader\nExecutes Binary"];
+    runtime      [label="Go Runtime Initialization"];
+	main_func [label=<
+	  <b>main()</b><br/>Function
+	>];
+    
+    // Memory + Runtime
+    goroutines   [label="Goroutines\n& Scheduler", shape=ellipse, style=filled, fillcolor="#e6ffe6"];
+    heap_stack   [label="Memory Allocator\nHeap & Stack"];
+    gc           [label="Garbage Collector", shape=ellipse, style=filled, fillcolor="#fff0f5"];
+    syscalls     [label="System Calls\nI/O, Net, Files", shape=ellipse, style=filled, fillcolor="#ffffcc"];
+    
+    // End
+    exit         [label="Program Exit"];
+
+    // Main execution flow
+    source_code -> go_build -> binary -> os_loader -> runtime -> main_func -> exit;
+
+    // Runtime parallel components
+    runtime -> goroutines;
+    runtime -> gc;
+    main_func -> goroutines;
+    goroutines -> heap_stack;
+    goroutines -> syscalls;
+    gc -> heap_stack;
+    main_func -> syscalls;
+
+    // Grouping memory and concurrency
+    subgraph cluster_runtime {
+        label = "Runtime System";
+        style = dashed;
+        goroutines;
+        heap_stack;
+        gc;
+        syscalls;
+    }
+}

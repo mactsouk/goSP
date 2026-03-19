@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "go_metrics_server"
+    static_configs:
+      - targets: ["tcp_metrics:9100"] # Prometheus scrapes the Go container by name

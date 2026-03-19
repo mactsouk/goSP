@@ -1,0 +1,11 @@
+func factorial(x) {
+    if (x == 0) {
+        return 1;
+    } else {
+        return x * factorial(x - 1);
+    }
+}
+
+let result = factorial(10);
+print("Factorial of 10 is: ");
+println(result);

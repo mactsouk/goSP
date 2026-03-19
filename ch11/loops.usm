@@ -1,0 +1,15 @@
+print("--- Standard For Loop Example ---");
+println("");
+
+let sum = 0;
+for let i = 0; i < 5; i = i + 1 {
+    print("Index: ");
+    print(i);
+    sum = sum + i;
+    print(" -> Sum so far: ");
+    println(sum);
+}
+
+println("");
+print("Final Total: ");
+println(sum);

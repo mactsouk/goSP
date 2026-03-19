@@ -1,0 +1,9 @@
+let a = 10;
+let b = 25;
+
+if a > b {
+    return a - b;
+}
+
+// Since a is not greater than b, we subtract a from b
+return b - a;

@@ -1,0 +1,36 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/mactsouk/goSP2/ch04/PGO
+cpu: Apple M4 Pro
+BenchmarkDramaticWorkload-14     	12447968	        97.11 ns/op
+BenchmarkDramaticWorkload-14     	12157849	        98.10 ns/op
+BenchmarkDramaticWorkload-14     	12311443	        98.05 ns/op
+BenchmarkDramaticWorkload-14     	12248058	        97.63 ns/op
+BenchmarkDramaticWorkload-14     	12240708	        98.33 ns/op
+BenchmarkDramaticWorkload-14     	12031898	        98.93 ns/op
+BenchmarkDramaticWorkload-14     	11724211	        98.15 ns/op
+BenchmarkDramaticWorkload-14     	12048560	        97.72 ns/op
+BenchmarkDramaticWorkload-14     	12189810	        97.71 ns/op
+BenchmarkDramaticWorkload-14     	12177748	        99.09 ns/op
+BenchmarkInterfaceDispatch-14    	90290341	        12.93 ns/op
+BenchmarkInterfaceDispatch-14    	94924820	        12.61 ns/op
+BenchmarkInterfaceDispatch-14    	97568907	        12.79 ns/op
+BenchmarkInterfaceDispatch-14    	79746580	        13.52 ns/op
+BenchmarkInterfaceDispatch-14    	72474892	        13.85 ns/op
+BenchmarkInterfaceDispatch-14    	97771286	        12.17 ns/op
+BenchmarkInterfaceDispatch-14    	96584661	        13.03 ns/op
+BenchmarkInterfaceDispatch-14    	91001588	        13.52 ns/op
+BenchmarkInterfaceDispatch-14    	90063043	        13.43 ns/op
+BenchmarkInterfaceDispatch-14    	89440437	        13.98 ns/op
+BenchmarkCalculateMetrics-14     	47941430	        24.47 ns/op
+BenchmarkCalculateMetrics-14     	48581028	        24.65 ns/op
+BenchmarkCalculateMetrics-14     	48974010	        24.79 ns/op
+BenchmarkCalculateMetrics-14     	46682238	        24.63 ns/op
+BenchmarkCalculateMetrics-14     	48567674	        24.45 ns/op
+BenchmarkCalculateMetrics-14     	48337314	        25.63 ns/op
+BenchmarkCalculateMetrics-14     	47841564	        26.41 ns/op
+BenchmarkCalculateMetrics-14     	42715140	        26.88 ns/op
+BenchmarkCalculateMetrics-14     	45224780	        26.96 ns/op
+BenchmarkCalculateMetrics-14     	44131234	        25.48 ns/op
+PASS
+ok  	github.com/mactsouk/goSP2/ch04/PGO	38.600s

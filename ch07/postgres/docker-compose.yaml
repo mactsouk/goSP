@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: go_pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: testdb
+    ports:
+      - "5432:5432"
+

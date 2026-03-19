@@ -1,0 +1,9 @@
+// Sample program
+let x = 10;
+if x >= 10 {
+    return x + 5;
+}
+if x != 5 {
+    return msg;
+}
+

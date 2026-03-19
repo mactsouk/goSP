@@ -1,0 +1,31 @@
+digraph RadixTree {
+    node [shape=box, style=filled, fillcolor=lightgrey, fontname="Courier"];
+
+    "" -> "g";
+
+    // Branch under "g"
+    "g" -> "o";
+    "g" -> "alaxy" [label="galaxy"];
+    "g" -> "ame"   [label="game"];
+    "g" -> "amma"  [label="gamma"];
+
+    // Subtree under "go"
+    "o" -> "ne"     [label="gone"];
+    "o" -> "od";
+    "o" -> "d"      [label="god"];
+    "o" -> "l"      [label="golf"];
+    "o" -> "lden"   [label="golden"];
+    "o" -> "pher"   [label="gopher"];
+
+    // Mark terminal nodes (word endings)
+    "ne"    [fillcolor=lightblue, style="filled,bold"];
+    "od"    [fillcolor=lightblue, style="filled,bold"];
+    "d"     [fillcolor=lightblue, style="filled,bold"];
+    "l"     [fillcolor=lightblue, style="filled,bold"];
+    "lden"  [fillcolor=lightblue, style="filled,bold"];
+    "pher"  [fillcolor=lightblue, style="filled,bold"];
+    "alaxy" [fillcolor=lightblue, style="filled,bold"];
+    "ame"   [fillcolor=lightblue, style="filled,bold"];
+    "amma"  [fillcolor=lightblue, style="filled,bold"];
+}
+

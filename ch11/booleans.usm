@@ -1,0 +1,36 @@
+print("--- Boolean Logic Example ---");
+println("");
+
+let isDay = true;
+let isRaining = false;
+
+print("Is it day? ");
+println(isDay);
+
+print("Is it raining? ");
+println(isRaining);
+
+// Logical AND
+if (isDay && isRaining) {
+    println("Look for a rainbow.");
+} else {
+    println("No rainbow right now.");
+}
+
+// Logical OR and NOT
+if (!isRaining || isDay) {
+    println("You can probably go for a walk.");
+}
+
+// Comparisons
+let x = 10;
+let y = 20;
+
+print("10 < 20 is: ");
+println(x < y);
+
+print("10 == 20 is: ");
+println(x == y);
+
+print("10 != 20 is: ");
+println(x != y);
